@@ -28,3 +28,6 @@ Desktop.ini
 # scss
 *.css
 *.css.map
+
+/build
+/node_modules
