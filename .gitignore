@@ -1,0 +1,30 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+
+# Jetbrains IDE
+.idea/
+
+# scss
+*.css
+*.css.map
