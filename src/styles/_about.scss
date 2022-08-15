@@ -2,11 +2,12 @@
 @import "./stylelib/variables";
 
 .about {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	@include wrapper(180px, 220px, 150px, 220px);
+	@include wrapper(160px, 220px, 130px, 220px);
 
 	&__content {
 		width: 754px;

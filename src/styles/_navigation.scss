@@ -6,10 +6,6 @@
 	align-items: center;
 	margin-bottom: 40px;
 
-	&__logo-link {
-
-	}
-
 	&__logo-img {
 		width: 44px;
 		height: 25px;
@@ -22,6 +18,12 @@
 
 	&__link {
 		padding: 10px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 700;
+		font-size: 13px;
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 3px;
 	}
 
 	&__link_expensive {

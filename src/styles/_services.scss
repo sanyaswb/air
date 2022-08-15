@@ -2,10 +2,134 @@
 @import "./stylelib/mixins";
 
 .services {
-	position: relative;
-	top: -30px;
 	width: 100%;
-	height: 1000px;
 	background-color: $background-color;
-	@include wrapper(130px, 220px, 130px, 220px);
+	margin-top: -30px;
+	@include wrapper(160px, 220px, 262px, 220px);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__content {
+		width: 364px;
+		margin-top: 100px;
+	}
+
+	&__navigation {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 19px;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		margin-bottom: 16px;
+		color: #C0CDD7;
+	}
+
+	&__title {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 24px;
+		color: $secondary-font-color;
+	}
+
+	&__description {
+		display: flex;
+		gap: 24px;
+		flex-direction: column;
+
+		span {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: $expensive-background-color;
+		}
+	}
+
+	&__card-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		width: 578px;
+	}
+
+	&__card-list &__card-item:nth-child(1) {
+		order: 1;
+		transform: translateY(50%);
+	}
+
+	&__card-list &__card-item:nth-child(2) {
+		order: 2;
+	}
+
+	&__card-list &__card-item:nth-child(3) {
+		order: 3;
+		transform: translateY(50%);
+	}
+
+	&__card-list &__card-item:nth-child(4) {
+		order: 4;
+	}
+
+	&__card-item {
+		display: flex;
+		flex-direction: column;
+		width: 264px;
+		height: 264px;
+		padding: 32px;
+		border-radius: 16px;
+		background-color: white;
+	}
+
+	&__card-number {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 13px;
+		width: 46px;
+		height: 24px;
+		border-radius: 23px;
+		background-color: $background-color;
+		color: #2060F6;
+		margin-bottom: 25px;
+	}
+
+	&__card-proposal {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 19px;
+		color: $expensive-background-color;
+		margin-bottom: 32px;
+	}
+
+	&__card-more {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	&__card-button {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-image: url("../assets/images/icons/button_arrow.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $primary-button-color;
+	}
+
+	&__card-link {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 15px;
+		color: $expensive-background-color;
+	}
 }
