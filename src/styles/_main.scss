@@ -1,0 +1,14 @@
+@import "./stylelib/variables";
+
+.main {
+	z-index: 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	top: -30px;
+	background-color: $background-color;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,31 @@
+@import "./stylelib/mixins";
+@import "./stylelib/variables";
+
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	@include wrapper(180px, 220px, 150px, 220px);
+
+	&__content {
+		width: 754px;
+	}
+
+	&__title {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 48px;
+		margin-bottom: 16px;
+		color: $secondary-font-color;
+	}
+
+	&__description {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 36px;
+		color: $expensive-background-color;
+	}
+}

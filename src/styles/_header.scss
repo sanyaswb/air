@@ -1,0 +1,52 @@
+@import "./stylelib/mixins";
+@import "./stylelib/variables";
+
+.header {
+ z-index: 1;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ position: relative;
+ background-color: $primary-background-color;
+ border-radius: 0 0 30px 30px;
+ height: 800px;
+ @include wrapper(50px, 220px, 205px, 220px);
+
+ &__container {
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+ }
+
+ &__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 68px;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+  color: white;
+ }
+
+ &__description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 83px;
+  color: white;
+ }
+
+ &__button {
+  width: 264px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: $primary-button-color;
+ }
+
+ &__slider {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+ }
+}

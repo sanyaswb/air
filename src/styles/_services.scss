@@ -1,0 +1,11 @@
+@import "./stylelib/variables";
+@import "./stylelib/mixins";
+
+.services {
+	position: relative;
+	top: -30px;
+	width: 100%;
+	height: 1000px;
+	background-color: $background-color;
+	@include wrapper(130px, 220px, 130px, 220px);
+}

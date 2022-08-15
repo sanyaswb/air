@@ -1,0 +1,43 @@
+@mixin wrapper ($padding-top, $padding-right, $padding-bottom, $padding-left, $limit: 1920) {
+	padding: $padding-top $padding-right $padding-bottom $padding-left;
+
+	@media (min-width: $limit) {
+		padding: $padding-top calc(#{$padding-right} + (100% - #{$limit}) / 2) $padding-bottom calc(#{$padding-left} + (100% - #{$limit}) / 2);
+	}
+}
+
+@mixin desktop-s {
+	@media (max-width: 1600px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin mobile-l {
+	@media (max-width: 640px) {
+		@content;
+	}
+}
+
+@mixin mobile-s {
+	@media (max-width: 320px) {
+		@content;
+	}
+}
+
+@mixin phone-height-l {
+	@media (max-height: 640px) {
+		@content;
+	}
+}
+
+@mixin phone-height-s {
+	@media (max-height: 320px) {
+		@content;
+	}
+}
