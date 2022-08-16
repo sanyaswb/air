@@ -1,0 +1,116 @@
+@import "./stylelib/mixins";
+@import "./stylelib/variables";
+
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 1000px;
+	background-color: $background-color;
+	@include wrapper(75px, 220px, 150px, 220px);
+
+	&__content {
+
+	}
+
+	&__navigation {
+		margin-bottom: 16px;
+	}
+
+	&__title {
+		margin-bottom: 85px;
+	}
+
+	&__card {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__card-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 362px;
+		//height: 494px;
+		padding: 87px 55px 35px 55px;
+		border-radius: 16px;
+		background-color: white;
+	}
+
+	&__card-img {
+		position: relative;
+		width: 140px;
+		height: 140px;
+		margin-bottom: 80px;
+	}
+
+	&__card-img:before {
+		z-index: 1;
+		position: absolute;
+		top: -35%;
+		left: 0;
+		transform: rotate(210deg);
+		width: 56px;
+		height: 139px;
+		border-radius: 12px;
+		background-color: $decoration-color-five;
+		content: '';
+	}
+
+	&__card-img:after {
+		z-index: 0;
+		position: absolute;
+		bottom: -35%;
+		right: 0;
+		transform: rotate(210deg);
+		width: 56px;
+		height: 139px;
+		border-radius: 12px;
+		background-color: $decoration-color-five;
+		content: '';
+	}
+
+	&__card-img img {
+		z-index: 1;
+		position: relative;
+		width: 140px;
+		border-radius: 50%;
+		margin-bottom: 80px;
+	}
+
+	&__card-description {
+		display: flex;
+		flex-direction: column;
+		//text-align: center;
+
+		:nth-child(1) {
+			align-self: center;
+			margin-bottom: 10px;
+		}
+
+		:nth-child(2) {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 20px;
+			color: $expensive-font-color;
+			margin-bottom: 16px;
+		}
+
+		:nth-child(3) {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 20px;
+			color: $secondary-font-color;
+			margin-bottom: 4px;
+		}
+
+		:nth-child(4) {
+
+		}
+	}
+}

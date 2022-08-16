@@ -15,12 +15,9 @@
 	@include wrapper(130px, 220px, 130px, 220px);
 
 	&__title {
-		font-family: 'Poppins', sans-serif;
-		font-weight: 600;
 		font-size: 52px;
 		line-height: 78px;
 		margin-bottom: 64px;
-		color: $secondary-font-color;
 	}
 
 	&__card {
