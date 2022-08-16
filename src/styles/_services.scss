@@ -5,7 +5,8 @@
 	width: 100%;
 	background-color: $background-color;
 	margin-top: -30px;
-	@include wrapper(160px, 220px, 187px, 220px);
+
+	@include wrapper(160px, 220px, 187px, 220px, 1601px);
 
 	&__container {
 		display: flex;
@@ -113,6 +114,7 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-color: $primary-button-color;
+		cursor: pointer;
 	}
 
 	&__card-link {

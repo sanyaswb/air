@@ -12,7 +12,8 @@
 	text-align: center;
 	background-color: white;
 	border-radius: 30px;
-	@include wrapper(130px, 220px, 130px, 220px);
+
+	@include wrapper(130px, 220px, 130px, 220px, 1601px);
 
 	&__title {
 		font-size: 52px;

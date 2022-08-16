@@ -10,7 +10,8 @@
  background-color: $primary-background-color;
  border-radius: 0 0 30px 30px;
  height: 800px;
- @include wrapper(50px, 220px, 205px, 220px);
+
+ @include wrapper(50px, 220px, 205px, 220px, 1601px);
 
  &__container {
   display: flex;
@@ -48,5 +49,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @include desktop-xl {
+   right: calc((100% - 2560px) / 2);
+  }
  }
 }
+

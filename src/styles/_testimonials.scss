@@ -9,7 +9,8 @@
 	width: 100%;
 	height: 1000px;
 	background-color: $background-color;
-	@include wrapper(75px, 220px, 150px, 220px);
+
+	@include wrapper(75px, 220px, 150px, 220px, 1601px);
 
 	&__content {
 		width: 100%;
