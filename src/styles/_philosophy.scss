@@ -1,0 +1,41 @@
+@import "./stylelib/variables";
+@import "./stylelib/mixins";
+
+.philosophy {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: no-repeat center white url("../assets/images/philosophy/philosophy_background.png");
+
+	@include wrapper(200px, 220px, 200px, 220px);
+
+	&__content {
+		width: 754px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 52px;
+		line-height: 78px;
+		margin-bottom: 24px;
+	}
+
+	&__description {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 36px;
+		color: $expensive-background-color;
+		margin-bottom: 64px;
+	}
+
+	&__button {
+		height: 56px;
+	}
+
+}
